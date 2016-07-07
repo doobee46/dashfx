@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  open_date: 2016-07-07 00:41:37
+  close_date: 2016-07-07 00:41:37
+  entry_price: 1
+  currency_pairs: MyString
+  position_size: 9.99
+  stop_loss: 9.99
+  take_profit: 1
+  direction: MyString
+  exit_price: 1
+  risk_reward: 1
+  win_loss: MyString
+  loss_amount: 1.5
+  profit_amount: 1.5
+  loss_percent: 1.5
+  profit_percent: 9.99
+  balance: 1
+  signal: MyText
+  comment: MyText
+  user_id: 
+
+two:
+  open_date: 2016-07-07 00:41:37
+  close_date: 2016-07-07 00:41:37
+  entry_price: 1
+  currency_pairs: MyString
+  position_size: 9.99
+  stop_loss: 9.99
+  take_profit: 1
+  direction: MyString
+  exit_price: 1
+  risk_reward: 1
+  win_loss: MyString
+  loss_amount: 1.5
+  profit_amount: 1.5
+  loss_percent: 1.5
+  profit_percent: 9.99
+  balance: 1
+  signal: MyText
+  comment: MyText
+  user_id: 
