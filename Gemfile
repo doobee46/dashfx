@@ -48,3 +48,6 @@ gem 'bootstrap-sass', '3.3.5'
 gem 'bootstrap-sass-extras'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
+gem 'quiet_assets'
+gem 'puma'
+gem "font-awesome-rails"

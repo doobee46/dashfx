@@ -1,0 +1,125 @@
+p{
+  font-size:40px;
+}
+
+button.btn.btn-primary{
+  position:relative;
+  margin:auto;
+}
+
+h1.text-center.text-primary{
+  padding-top:60px;
+}
+ 
+.main-icon{
+  position:relative;
+  font-size:30px;
+}
+
+.btn-nav{
+  margin-top:8px;
+}
+
+.form-control{
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+.login_title{
+  text-align: center;
+  color:;
+  position:relative;
+  top:35px;
+  font-size:14px;
+
+}
+
+img.grphic{
+  width: 260px;
+}
+
+.main{
+  border-radius:25px;
+  font-size:16px;
+  position:relative;
+  left:45%;
+  top:25px;
+}
+
+div.container.jumbo{
+  margin-top:30px;
+}
+
+h1.text-center.text-primary{
+  font-size:46px;
+}
+
+p.text-center.hero{
+  font-size:23px;
+  width:640px;
+  margin:auto;
+}
+
+div.container.wrapper{
+  border:1px solid #158cba;
+  height:320px;
+  display:block;
+}
+
+div.table-responsive.journal{
+  margin-top:20px;
+}
+
+p.analyse{
+  font-size:25px;
+}
+
+button.btn.btn-default.navbar-btn.login{
+  float:right;
+}
+
+button.btn.btn-primary.navbar-btn.login{
+  float:right;
+  margin-top:5px;
+}
+
+div.container.feature{
+  margin-bottom:35px;
+}
+
+i.glyphicon.glyphicon-tasks.track{
+  font-size:120px;
+}
+
+i.glyphicon.glyphicon-tasks.track{
+  font-size:120px;
+}
+
+i.glyphicon.glyphicon-list-alt.track{
+  font-size:120px;
+}
+
+button.btn.btn-default.navbar-btn{
+  background-color:0088CC;
+  float:right;
+  margin-top:8px;
+}
+
+button.btn.btn-default.navbar-btn.main{
+  background-color:#088CC;
+}
+
+button.btn.btn-primary.navbar-btn.main{
+  float:right;
+  margin-top:8px;
+}
+
+i.glyphicon.glyphicon-list-alt.list{
+  font-size:120px;
+  margin-top:45px;
+  position:relative;
+  left:35%;
+}
+

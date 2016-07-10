@@ -1,0 +1,36 @@
+<div class="container">
+        <h3 class="login_title">Sign in to continue to Dash Fx</h3>
+        <div class="login-card">
+        <%=image_tag('avatar_2x.png',:class => "profile-img-card")%>
+           <% if user_signed_in? %>
+                   <p class="profile-name-card"><%= user.name %></p>
+                <% else %>
+                   <p class="profile-name-card"> Username</p>
+            <% end %>
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <span class="reauth-email"> </span>
+              <div class="field">
+                <%= f.email_field :email, autofocus: true,placeholder:'Email',class:'form-control'%>
+              </div>
+              <div class="field">
+                <%= f.password_field :password, autocomplete: "off",placeholder: 'Password' ,class:'form-control'%>
+              </div>
+                <% if devise_mapping.rememberable? -%>
+                  <div class="field">
+                    <%= f.check_box :remember_me %>
+                    <%= f.label :remember_me %>
+                  </div>
+                <% end -%>
+
+                <div class="actions">
+                  <%= f.submit "Log in", class:'btn btn-primary btn-block' %>
+                </div>
+              <% end %>
+              <div class="main-action">
+                 <%= render "devise/shared/links" %>
+              </div>
+        </div>
+    </div>
+
+
+
