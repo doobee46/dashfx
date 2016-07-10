@@ -26,6 +26,10 @@ h1.text-center.text-primary{
   letter-spacing: 1px;
 }
 
+.jumbo{
+  margin-top:85px;
+}
+
 
 .login_title{
   text-align: center;
@@ -36,8 +40,10 @@ h1.text-center.text-primary{
 
 }
 
-img.grphic{
-  width: 260px;
+img.graphic{
+ position: relative;
+ top: 20px;
+ left: 35%;
 }
 
 .main{
