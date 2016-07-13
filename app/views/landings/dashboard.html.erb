@@ -1,4 +1,130 @@
  <div class="container">
     <div class="page-header">
-        <h1 class="text-uppercase text-primary">Dashboard Overview</h1></div>
+    <h1 class="text-uppercase text-primary">Dashboard Overview</h1></div>
+</div>
+
+<div class="container">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	  <h4>Financial <span class="badge badge-primary">1<span></h4>
+	  <h4 class='right'></h4>
+	  </div>
+	  <div class="panel-body">
+	    <div class="col-md-4">
+		    <ul class="list-group">
+			  <li class="list-group-item">
+			    <h6>Equity Invested :</h6>
+			    <span class="text-primary fr">$ 5,000,000.00</span>
+			  </li>
+			  <li class="list-group-item">
+			    <span class="text-primary">2</span>
+			    Current Equity :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Total Profit/Loss :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Profit/loss % :
+			  </li>
+			</ul>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+			  <li class="list-group-item">
+			    <span class="badge">14</span>
+			    Total Trades :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">2</span>
+			    Short Trades:
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Long Trades :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Winning Trades % :
+			  </li>
+			</ul>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+			  <li class="list-group-item">
+			    <span class="badge">14</span>
+			    Winning Long Trades :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">2</span>
+			    Winning Short Trades:
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Loss Trades :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Loss Long Trades % :
+			  </li>
+			</ul>
+        </div>
+  	  </div>
+	</div>
+</div>
+<div class="container">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	  <h4>Financial <span class="badge badge-primary">2<span></h4>
+	  <h4 class='right'></h4>
+	  </div>
+	  <div class="panel-body">
+	    <div class="col-md-6">
+	    	<ul class="list-group">
+			  <li class="list-group-item">
+			    <span class="badge">14</span>
+			    Loss Short Trades:
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">2</span>
+			    Average Profitable Trade:
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Average Losing Trade:
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">1</span>
+			    Average Trades:
+			  </li>
+			</ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group">
+			  <li class="list-group-item">
+			    <span class="badge">14</span>
+			    Profit/loss % :
+			  </li>
+			  <li class="list-group-item">
+			    <span class="badge">2</span>
+			    Average Risk / Reward:
+			  </li>
+			</ul>
+        </div>        
+  	  </div>   
+	</div>
+</div>
+<div class="container">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	  <h4>Equity Chart <span class="badge badge-primary">3<span></h4>
+	  <h4 class='right'></h4>
+	  </div>
+	  <div class="panel-body">
+	    <div class="col-md-12">
+         <%= line_chart @users.group_by_day(:created_at).count%>
+        </div>        
+  	  </div>   
+	</div>
 </div>

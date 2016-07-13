@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :accounts
+  resources :logs
+
   get "index" =>'landings#index'
   get "dashboard" => "landings#dashboard"
 

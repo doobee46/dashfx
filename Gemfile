@@ -51,3 +51,5 @@ gem 'tzinfo-data'
 gem 'quiet_assets'
 gem 'puma'
 gem "font-awesome-rails"
+gem "chartkick"
+gem 'groupdate'

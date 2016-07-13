@@ -30,6 +30,15 @@ h1.text-center.text-primary{
   margin-top:85px;
 }
 
+.fr{
+  float:right;
+}
+
+.entry{
+  position: relative;
+  bottom: 55px;
+}
+
 
 .login_title{
   text-align: center;
