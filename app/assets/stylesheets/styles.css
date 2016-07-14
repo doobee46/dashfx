@@ -34,6 +34,10 @@ h1.text-center.text-primary{
   float:right;
 }
 
+.fl{
+  float:left;
+}
+
 .entry{
   position: relative;
   bottom: 55px;
