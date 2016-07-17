@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :logs
+  resources :logs do
+    collection { post :import}
+  end
 
   resources :accounts
 

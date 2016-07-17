@@ -54,4 +54,5 @@ gem "font-awesome-rails"
 gem "chartkick"
 gem 'groupdate'
 gem 'rails_12factor', group: :production
+gem 'roo'
 ruby "2.3.1"

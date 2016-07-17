@@ -90,6 +90,10 @@ img.graphic{
   top:25px;
 }
 
+.modal-body p.text-warning{
+  font-size: 13px;
+}
+
 div.container.jumbo{
   margin-top:30px;
 }
