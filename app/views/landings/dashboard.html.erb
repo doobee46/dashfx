@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="panel panel-default">
 	  <div class="panel-heading">
-	  <h4>Financial <span class="badge badge-primary">1<span></h4>
+	  <h4><i class="fa fa-money" aria-hidden="true"></i> Financial </h4>
 	  <h4 class='right'></h4>
 	  </div>
 	  <div class="panel-body">
@@ -28,21 +28,17 @@
         </div>
         <div class="col-md-4">
             <ul class="list-group">
-			  <li class="list-group-item">
-			    <span class="badge">14</span>
-			    Total Trades :
+              <li class="list-group-item">
+			    Total Trades :<span class="text-danger fr">-15%</span>
 			  </li>
-			  <li class="list-group-item">
-			    <span class="badge">2</span>
-			    Short Trades:
+			   <li class="list-group-item">
+			    Short Trades :<span class="text-danger fr">-15%</span>
 			  </li>
-			  <li class="list-group-item">
-			    <span class="badge">1</span>
-			    Long Trades :
+			   <li class="list-group-item">
+			    Long Trades :<span class="text-danger fr">-15%</span>
 			  </li>
-			  <li class="list-group-item">
-			    <span class="badge">1</span>
-			    Winning Trades % :
+			   <li class="list-group-item">
+			    Winning Trades :<span class="text-danger fr">-15%</span>
 			  </li>
 			</ul>
         </div>
@@ -72,7 +68,8 @@
 <div class="container">
 	<div class="panel panel-default">
 	  <div class="panel-heading">
-	  <h4>Financial <span class="badge badge-primary">2<span></h4>
+	  <h4><i class="fa fa-money" aria-hidden="true"></i>
+Financial </h4>
 	  <h4 class='right'></h4>
 	  </div>
 	  <div class="panel-body">
@@ -112,26 +109,26 @@
 	</div>
 </div>
 <div class="container">
-	<div class="col-lg-6">
+	<!--<div class="col-md-6">-->
 		<div class="panel panel-default">
 		  <div class="panel-heading">
-		  <h4>Equity Chart <span class="badge badge-primary">3<span></h4>
+		  <h4><i class="fa fa-area-chart" aria-hidden="true"></i> Equity Chart</h4>
 		  <h4 class='right'></h4>
 		  </div>
 		  <div class="panel-body">
-	         <%= line_chart @users.group_by_day(:created_at).count%>       
+	         <%= area_chart @users.group_by_day(:created_at).count%>       
 	  	  </div>   
 		</div>
-	</div>
-	<div class="col-lg-6">
+	<!--</div>-->
+</div>
+<div class="container">
 		<div class="panel panel-default">
 		  <div class="panel-heading">
-		  <h4>Profit/Loss Chart <span class="badge badge-primary">3<span></h4>
+		  <h4><i class="fa fa-area-chart" aria-hidden="true"></i> Profit/Loss Chart </h4>
 		  <h4 class='right'></h4>
 		  </div>
 		  <div class="panel-body">
-	         <%= bar_chart @users.group_by_day(:created_at).count%>       
+	         <%= column_chart @users.group_by_day(:created_at).count%>       
 	  	  </div>   
 		</div>
-	</div>
 </div>

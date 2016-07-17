@@ -1,29 +1,84 @@
 <div class="container">
     <div class="page-header">
-    <h1 class="text-uppercase text-primary">Journal view</h1>
-    <%= link_to 'New Entry', new_log_path, class:'btn btn-success fr entry' %>
+        <h3 class="text-uppercase text-primary">journal view</h3></div>
+        <%= link_to new_log_path, class:'btn btn-success entry fr' do
+         %>
+         <i class="fa fa-plus spacer" aria-hidden="true"></i>New Entry
+         <%end%>
+
+        <%= link_to  new_log_path, class:'btn btn-primary entry fr' do %>
+        <i class="fa fa-upload spacer" aria-hidden="true"></i>Upload File
+        <%end%>
+
     </div>
 </div>
 <div class="container">
-  <table>
-    <thead>
-      <tr>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Price</th>
+      <th>Pairs</th>
+      <th>Lot</th>
+      <th>SL</th>
+      <th>TP</th>
+      <th>Direction</th>
+      <th>Exit</th>
+      <th>Risk/reward</th>
+      <th>Win/loss</th>
+      <th>Loss</th>
+      <th>Profit</th>
+      <th>Loss%</th>
+      <th>Profit%</th>
+      <th>Balance</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
 
-    <tbody>
-      <% @logs.each do |log| %>
-        <tr>
-          <td><%= link_to 'Show', log %></td>
-          <td><%= link_to 'Edit', edit_log_path(log) %></td>
-          <td><%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+  <tbody>
+    <% @logs.each do |log| %>
+      <tr>
+        <td><%= log.open %></td>
+        <td><%= log.close %></td>
+        <td><%= log.price %></td>
+        <td><%= log.pairs %></td>
+        <td><%= log.lot %></td>
+        <td class="danger"><%= log.sl %></td>
+        <td class="success"><%= log.tp %></td>
+        <td><%= log.direction %></td>
+        <td><%= log.exit %></td>
+        <td><%= log.risk_reward %></td>
+        <td><%= log.win_loss %></td>
+        <td><%= log.loss %></td>
+        <td><%= log.profit %></td>
+        <td><%= log.loss_percent %></td>
+        <td><%= log.profit_percent %></td>
+        <td><%= log.balance %></td>
+        <td>
+        <span class="has-tooltip" data-toggle="tooltip" data-placement="top" title="view">
+        <%= link_to log do %>
+          <i class="fa fa-eye spacer" aria-hidden="true"></i>
+        <%end%>
+        </span>
+        <span class="has-tooltip" data-toggle="tooltip" data-placement="top" title="Edit">
+        <%= link_to edit_log_path(log) do %>
+          <i class="fa fa-pencil spacer" aria-hidden="true"></i>
+        <%end%>
+        </span>
+        <span class="has-tooltip" data-toggle="tooltip"  data-placement="top" title="Destroy">
+        <%= link_to log, method: :delete, data: { confirm: 'Are you sure?' } do %>
+          <i class="fa fa-trash-o spacer" aria-hidden="true"></i>
+        <%end%> 
+        </span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <br>
+
+</div>
 
 

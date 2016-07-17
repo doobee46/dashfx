@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160707004137) do
+ActiveRecord::Schema.define(version: 20160716225354) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,24 +61,24 @@ ActiveRecord::Schema.define(version: 20160707004137) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "logs", force: true do |t|
-    t.datetime "open_date"
-    t.datetime "close_date"
-    t.integer  "entry_price"
-    t.string   "currency_pairs"
-    t.decimal  "position_size"
-    t.decimal  "stop_loss"
-    t.integer  "take_profit"
+    t.date     "open"
+    t.date     "close"
+    t.integer  "price"
+    t.string   "pairs"
+    t.decimal  "lot"
+    t.decimal  "sl"
+    t.integer  "tp"
     t.string   "direction"
-    t.integer  "exit_price"
+    t.integer  "exit"
     t.integer  "risk_reward"
     t.string   "win_loss"
-    t.float    "loss_amount"
-    t.float    "profit_amount"
-    t.float    "loss_percent"
+    t.decimal  "loss"
+    t.decimal  "profit"
+    t.decimal  "loss_percent"
     t.decimal  "profit_percent"
     t.integer  "balance"
-    t.text     "signal"
-    t.text     "comment"
+    t.string   "strategy"
+    t.text     "notes"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

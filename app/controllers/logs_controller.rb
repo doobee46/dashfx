@@ -24,7 +24,7 @@ class LogsController < ApplicationController
   # POST /logs
   # POST /logs.json
   def create
-    @log = Log.new(log_params)
+    @log = current_user.logs.new(log_params)
 
     respond_to do |format|
       if @log.save
@@ -68,7 +68,8 @@ class LogsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+
     def log_params
-      params.fetch(:log, {})
+      params.require(:log).permit(:open, :close, :price, :pairs, :lot, :sl, :tp, :direction, :exit, :risk_reward, :win_loss, :loss, :profit, :loss_percent, :profit_percent, :balance, :strategy, :notes, :user_id)
     end
 end

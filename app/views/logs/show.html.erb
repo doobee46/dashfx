@@ -1,4 +1,99 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Open:</strong>
+  <%= @log.open %>
+</p>
+
+<p>
+  <strong>Close:</strong>
+  <%= @log.close %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @log.price %>
+</p>
+
+<p>
+  <strong>Pairs:</strong>
+  <%= @log.pairs %>
+</p>
+
+<p>
+  <strong>Lot:</strong>
+  <%= @log.lot %>
+</p>
+
+<p>
+  <strong>sl:</strong>
+  <%= @log.sl %>
+</p>
+
+<p>
+  <strong>tp:</strong>
+  <%= @log.tp %>
+</p>
+
+<p>
+  <strong>direction:</strong>
+  <%= @log.direction %>
+</p>
+
+<p>
+  <strong>Exit:</strong>
+  <%= @log.exit %>
+</p>
+
+<p>
+  <strong>Risk reward:</strong>
+  <%= @log.risk_reward %>
+</p>
+
+<p>
+  <strong>Win loss:</strong>
+  <%= @log.win_loss %>
+</p>
+
+<p>
+  <strong>Loss:</strong>
+  <%= @log.loss %>
+</p>
+
+<p>
+  <strong>Profit:</strong>
+  <%= @log.profit %>
+</p>
+
+<p>
+  <strong>Loss percent:</strong>
+  <%= @log.loss_percent %>
+</p>
+
+<p>
+  <strong>Profit percent:</strong>
+  <%= @log.profit_percent %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @log.balance %>
+</p>
+
+<p>
+  <strong>Strategy:</strong>
+  <%= @log.strategy %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @log.notes %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @log.user %>
+</p>
+
 <%= link_to 'Edit', edit_log_path(@log) %> |
 <%= link_to 'Back', logs_path %>
